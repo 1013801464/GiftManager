@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color_theme_6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/button_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="searchButtonClick"
+                android:padding="10dp"
+                android:text="搜索"
+                android:textSize="?attr/qmui_empty_view_sub_title_text_size"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="12dp">
+
+                <com.qmuiteam.qmui.layout.QMUIButton
+                    android:id="@+id/btn_add_row"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_in_homepage"
+                    android:onClick="addRow"
+                    android:text="添加一行"
+                    android:textColor="#353c46"
+                    android:textSize="12dp" />
+
+                <com.qmuiteam.qmui.layout.QMUIButton
+                    android:id="@+id/btn_add_col"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_in_homepage"
+                    android:onClick="addCol"
+                    android:text="添加一列"
+                    android:textColor="#353c46"
+                    android:textSize="12dp" />
+
+                <com.qmuiteam.qmui.layout.QMUIButton
+                    android:id="@+id/btn_import_excel"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_in_homepage"
+                    android:onClick="importExcel"
+                    android:text="导入文件"
+                    android:textColor="#353c46"
+                    android:textSize="12dp" />
+
+                <com.qmuiteam.qmui.layout.QMUIButton
+                    android:id="@+id/btn_export_excel"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/btn_in_homepage"
+                    android:onClick="exportExcel"
+                    android:text="导出文件"
+                    android:textColor="#353c46"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/qmui_topbar_height" />
+    </com.qmuiteam.qmui.widget.QMUITopBarLayout>
+
+
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

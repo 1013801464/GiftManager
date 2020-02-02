@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Button正常状态下的背景 -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <!-- 内部颜色 -->
+            <solid android:color="#F3F2F1" />
+            <!-- 边缘线条颜色 -->
+            <stroke android:width="?attr/qmui_round_btn_border_width" android:color="?attr/qmui_skin_border" />
+            <!-- 圆角的幅度 -->
+            <corners android:radius="8dp" />
+        </shape>
+
+    </item>
+    <!-- Button按下时的背景 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- 内部颜色 -->
+            <solid android:color="#F3F2F1" />
+            <!-- 边缘线条颜色 -->
+            <stroke android:width="?attr/qmui_round_btn_border_width" android:color="?attr/qmui_skin_support_round_btn_border_color" />
+            <!-- 圆角的幅度 -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>
