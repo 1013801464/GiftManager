@@ -16,7 +16,19 @@
 
 <br>
 截图
-![主页](imgs/1.jpg)
-![搜索](imgs/2.jpg)
-![查看和编辑](imgs/3.jpg)
-![导入Excel文件](imgs/4.jpg)
+
+> 主页
+<img src='imgs/1.jpg' width=640></img>
+
+<br>
+> 搜索
+<img src='imgs/2.jpg' width=640></img>
+
+<br>
+> 查看和编辑
+<img src='imgs/3.jpg' width=640></img>
+
+<br>
+> 导入Excel文件
+<img src='imgs/4.jpg' width=640></img>
+
